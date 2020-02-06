@@ -6,6 +6,9 @@ public class Circulo_VP extends FiguraGeometrica_VP {
 	
 	public Circulo_VP(double r, String tipoFigura) {
 		super(tipoFigura);
+		if(radio<0) {
+			radio=radio+(radio*2);
+		}
 		radio = r;
 	}
 
